@@ -1,13 +1,9 @@
 #!/usr/bin/python3
 
-### This file contain all the function to generate a BIP39 Mnemonic Seed
-import secrets
-from itertools import chain, product
 import binascii
 import sys
-import hmac
-
-from hashlib import sha256 , pbkdf2_hmac , sha512
+from hashlib import sha256
+from itertools import chain, product
 
 
 
@@ -52,15 +48,6 @@ def get_mnemonic(checksum, dict):
 		index += 1
 		i += 11
 	return (mnemonic)
-
-
-def mnemonic_to_seed(mnemonic, passphrase):
-	mnemonic_phrase = ""
-	for key in mnemonic:
-		mnemonic_phrase = mnemonic_phrase + mnemonic[key] + " "
-	mnemonic_phrase = mnemonic_phrase[:-1] + passphrase
-	seed = pbkdf2_hmac("SHA512", bytes(mnemonic_phrase.encode()), bytes(("mnemonic" + passphrase).encode()), 2048).hex()
-	return (seed)
 
 
 def get_wordnumber(word, dict_path):
@@ -140,5 +127,6 @@ def main():
 	if len(sys.argv) == 2:
 		phrase = sys.argv[1]
 	mnemonic_filler(phrase, dict_path)
+
 
 main()
