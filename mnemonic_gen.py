@@ -68,7 +68,7 @@ def get_wordnumber(word, dict_path):
 	with open(dict_path) as dict:
 		for line in dict:
 			if word == line or word == line[:-1]:
-				return bin(index)[2:]
+				return resize_bin(bin(index)[2:], 11)
 			index += 1
 	return ("Error")
 
