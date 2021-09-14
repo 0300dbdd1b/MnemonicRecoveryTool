@@ -9,7 +9,7 @@ here's a mnemonic : toddler pepper buddy gentle crack heart cannon match answer 
 ```
 python3 mnemonic_gen.py "toddler pepper buddy gentle crack heart cannon match answer stage shine nominee agree crouch steel cheese mean turtle final person close scorpion latin"
 
-Phrase :	 toddler pepper buddy gentle crack heart cannon match answer stage shine nominee agree crouch steel cheese mean turtle final person close scorpion latin
+Phrase : toddler pepper buddy gentle crack heart cannon match answer stage shine nominee agree crouch steel cheese mean turtle final person close scorpion latin
 
 Lasts words finded :
 
