@@ -29,5 +29,3 @@ The number of expected words finded is: 2^(-1/3 L + 12) - 1 <br>
 
 where L is the lenght of the complete mnemonic (in our case 24) <br>
 
-nbits_to_fill = (L * 11)  - (L / 3)  -   ( (L - 1) * 11 ) = -(1/3)L + 11 <br>
-expected number of word finded = 2^(nbits_to_fill + 1) - 1
