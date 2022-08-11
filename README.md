@@ -19,6 +19,8 @@ Lasts words finded :
 [3] : jacket
 [4] : pact
 [5] : puzzle
+[6] : security
+[7] : west
 ```
 
 here the [5] was the word we searched. <br>
