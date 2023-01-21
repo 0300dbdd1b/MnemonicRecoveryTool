@@ -32,3 +32,5 @@ The number of expected words finded is: 2^(-1/3 L + 12) - 1 <br>
 where L is the lenght of the complete mnemonic (in our case 24) <br>
 
 
+(note: this script is shit)
+
